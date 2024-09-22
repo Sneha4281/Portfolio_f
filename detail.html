@@ -13,11 +13,8 @@
             padding: 0;
         }
 
-
-
         .container {
             margin: 100px auto 20px;
-            /* Adjust margin to account for the fixed navbar */
             max-width: 900px;
             background-color: white;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -35,14 +32,27 @@
         }
 
         .image-section {
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: bolder;
+            text-align: left;
             margin: 20px 0;
         }
 
         .image-section img {
-            max-width: 100%;
+            width: 100%;
+            max-width: 300px;
             height: auto;
+            margin-bottom: 10px;
             border-radius: 10px;
+        }
+
+        .image-section p {
+            text-align: left;
+            margin-top: 10px;
+            padding: 10px;
+            color: rgb(33, 33, 33);
         }
 
         .section {
@@ -153,23 +163,18 @@
             padding: 8px;
             font-size: 0.9rem;
         }
-        .image-section{
-            display: flex;
-            justify-content: space-around;
-            font-weight: bolder;
-            text-align: left;
-            
+
+        /* Adjust image section for smaller screens */
+        @media (max-width: 768px) {
+            .image-section {
+                text-align: center;
+            }
+
+            .image-section img {
+                width: 100%;
+                max-width: 100%;
+            }
         }
-        
-      
-
-
-        .image-section img {
-    width: 100%;
-    max-width: 300px; /* Set a maximum width to prevent the image from getting too large on larger screens */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 10px; /* Rounded corners */
-}
 
     </style>
 </head>
@@ -188,41 +193,37 @@
 
     <div class="container">
         <div class="heading">
-    DETAILS 
+            DETAILS
         </div>
 
         <div class="image-section">
-            <img   src="bg4.png" alt="Autobiography Structure">
-            <p>DOB:March 5 2003👶🏽<br>Religion:Hinduism🕉️<br>Gender:Female👩🏾‍💻 <br>Address:Odisha,berhampur📍🗺️<br>Email:asneha151@gmail.com📩 <br>Graduation:B.Tech👩🏻‍💻📓✍🏻💡<br>College:NIST UNIVERSITY🏫 <br>Phone_no:9448676627📞
-            </p>
+            <img src="bg4.png" alt="Autobiography Structure">
+            <p>DOB: March 5 2003👶🏽<br>Religion: Hinduism🕉️<br>Gender: Female👩🏾‍💻<br>Address: Odisha, Berhampur📍🗺️<br>Email: asneha151@gmail.com📩<br>Graduation: B.Tech👩🏻‍💻📓✍🏻💡<br>College: NIST University🏫<br>Phone: 9448676627📞</p>
         </div>
 
         <div id="autobiography" class="section">
             <h3>Autobiography</h3>
-            <p>I was born on a warm, sunny day in March (5 2003) in (berhampur📍🗺️), (India). I still live in place of
-                birth, India, and Schooling from DAV PUBLIC School. I live with my Mom,Dad,sister.
-               </p>
+            <p>I was born on a warm, sunny day in March (5 2003) in Berhampur, India. I still live in my place of birth, India, and completed my schooling at DAV Public School. I live with my mom, dad, and sister.</p>
         </div>
 
         <div id="future" class="section">
             <h3>Who I am in life</h3>
-            <p>My name is A. Sneha. I began my education at the age of four. In the fifth grade,  I won a prize in a kho-kho competition. After completing my matriculation, I participated in a summer internship, where I earned a couple of awards in speech competitions.</p>
+            <p>My name is A. Sneha. I began my education at the age of four. In the fifth grade, I won a prize in a kho-kho competition. After completing my matriculation, I participated in a summer internship, where I earned a couple of awards in speech competitions.</p>
         </div>
 
         <div id="life-meaning" class="section">
             <h3>What’s my outlook on the future</h3>
-            <p>As a B.Tech student with a passion for software engineering, I am focused on developing the skills and knowledge . I envision a future where I can apply my technical expertise to solve complex problems, contribute to innovative projects, and continuously grow as a professional. .</p>
+            <p>As a B.Tech student with a passion for software engineering, I am focused on developing the skills and knowledge necessary to succeed in my field. I envision a future where I can apply my technical expertise to solve complex problems and contribute to innovative projects.</p>
         </div>
 
         <div class="section">
             <h3>What life means to me</h3>
-            <p>Life, to me, might mean a journey of growth, learning, and making a positive impact.</p>
+            <p>Life, to me, means a journey of growth, learning, and making a positive impact.</p>
         </div>
 
         <div id="conclusion" class="section">
             <h3>Conclusion</h3>
-            <p>it means pursuing my passion for software engineering, overcoming challenges, and striving to make a positive impact on the world around me. Through dedication, persistence, and the support of my loved ones, I aim to shape a future that reflects my dreams and aspirations.
-            </p>
+            <p>Pursuing my passion for software engineering, overcoming challenges, and striving to make a positive impact on the world around me are the pillars of my future. With dedication, persistence, and support from loved ones, I aim to shape a future that reflects my dreams and aspirations.</p>
         </div>
     </div>
 
